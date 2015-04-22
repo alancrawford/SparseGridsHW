@@ -16,9 +16,9 @@ By way of overview the built-in families are identified by a 3-letter key which 
 To use the code in Julia first compile the C-code to create a dynamic library ready to be called by Julia.  If using the 'sparse_grids_hw_jl.sh' in the /src folder, it creates a dynamic library called 'sparselib.dylib' in a new folder, /lib.  
 
 Second, to enable Julia to find the newly created library, add the path where the library is stored to Julia's DL_LOAD_PATH. One way to do this is to add the line 
-'''
+```
         push!(Sys.DL_LOAD_PATH,"[Path to new library's folder]")
-'''
+```
 to ~/.juliarc.jl. 
 
 # Calling in Julia
