@@ -8,14 +8,14 @@ By way of overview the built-in families are identified by a 3-letter key which 
 
 * GQU: standard Gauss-Legendre quadrature rules, for the unit interval [0,1],with weight function w(x) = 1.
 * KPU: Kronrod-Patterson quadrature rules for the unit interval [0,1], with weight function w(x) = 1.
-* GQN: standard Gauss-Hermite quadrature rules, for the infinite interval (-oo,+oo), with weight function w(x) = exp(-x*x/2)/sqrt(2*pi).
-* KPN: Kronrod-Patterson quadrature rules for the infinite interval (-oo,+oo) with weight function w(x) = exp(-x*x/2)/sqrt(2*pi).
+* GQN: standard Gauss-Hermite quadrature rules, for the infinite interval (-∞,+∞), with weight function w(x) = exp(-x^2/2)/√(2*π).
+* KPN: Kronrod-Patterson quadrature rules for the infinite interval (-∞,+∞) with weight function w(x) = exp(-x^2/2)/√(2*π).
 
 # Compiling C Code
 
-To use the code in Julia first compile the C-code to create a dynamic library ready to be called by Julia.  If using the 'sparse_grids_hw_jl.sh' in the /src folder, it creates a dynamic library called 'sparselib.dylib' in a new folder, /lib.  
+To use the code in Julia compile the C-code to create a dynamic library ready to be called by Julia.  If using the 'sparse_grids_hw_jl.sh' in the /src folder, it creates a dynamic library called 'sparselib.dylib' in a new folder, /lib.  
 
-Second, to enable Julia to find the newly created library, add the path where the library is stored to Julia's DL_LOAD_PATH. One way to do this is to add the line 
+To enable Julia to find the newly created librar, add the path where the library is stored to Julia's DL_LOAD_PATH. One way to do this is to add the line 
 ```
         push!(Sys.DL_LOAD_PATH,"[Path to new library's folder]")
 ```
