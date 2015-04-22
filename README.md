@@ -8,8 +8,8 @@ By way of overview the built-in families are identified by a 3-letter key which 
 
 * GQU: standard Gauss-Legendre quadrature rules, for the unit interval [0,1],with weight function w(x) = 1.
 * KPU: Kronrod-Patterson quadrature rules for the unit interval [0,1], with weight function w(x) = 1.
-* GQN: standard Gauss-Hermite quadrature rules, for the infinite interval (-∞,+∞), with weight function w(x) = exp(-x <sup></sup> 2/2)/√(2*π).
-* KPN: Kronrod-Patterson quadrature rules for the infinite interval (-∞,+∞) with weight function w(x) = exp(-x <sup></sup> 2/2)/√(2*π).
+* GQN: standard Gauss-Hermite quadrature rules, for the infinite interval (-∞,+∞), with weight function w(x) = exp(-x <sup>2</sup>/2)/√(2*π).
+* KPN: Kronrod-Patterson quadrature rules for the infinite interval (-∞,+∞) with weight function w(x) = exp(-x <sup>2</sup>/2)/√(2*π).
 
 # Compiling C Code
 
