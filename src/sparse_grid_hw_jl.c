@@ -6483,7 +6483,7 @@ int j;
     }
   for ( j = 0; j < n2; j++ )
     {
-      w[j] = nodes[j];
+      w[j] = weights[j];
   }
   free(nodes);
   free(weights);
