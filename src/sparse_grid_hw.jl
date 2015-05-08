@@ -12,11 +12,12 @@ Created: 21st April 2015
 
  =#
 type nwspgr
-	rule 	:: ASCIIString
-	dims 	:: Int64
-	level	:: Int64
-	nodes	:: Array{Float64,2}
-	weights :: Vector{Float64}
+	rule 	 :: ASCIIString
+	dims 	 :: Int64
+	level	 :: Int64				
+	NumNodes :: Int64 				
+	nodes	 :: Array{Float64,2}
+	weights  :: Vector{Float64}
 
 	# Constructor function 
 	function nwspgr(rule::ASCIIString, dim::Int64, level::Int64 )
@@ -31,7 +32,7 @@ type nwspgr
 					Void,
 					(Int, Int , Int,  Ptr{Cdouble}, Ptr{Cdouble}) ,
 					ruledict[rule], dim , level , x, w);
-		new(rule, dim, level, x', w)
+		new(rule, dim, level, K, x, w)
 	end
 end
 
