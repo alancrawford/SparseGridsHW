@@ -6,10 +6,10 @@ http://people.sc.fsu.edu/~jburkardt/c_src/sparse_grid_hw/sparse_grid_hw.html
 
 By way of overview the built-in families are identified by a 3-letter key which is also the name of the function that returns members of the family:
 
-* GQU: standard Gauss-Legendre quadrature rules, for the unit interval [0,1],with weight function w(x) = 1.
-* KPU: Kronrod-Patterson quadrature rules for the unit interval [0,1], with weight function w(x) = 1.
-* GQN: standard Gauss-Hermite quadrature rules, for the infinite interval (-∞,+∞), with weight function w(x) = exp(-x<sup>2</sup>/2)/√2π.
-* KPN: Kronrod-Patterson quadrature rules for the infinite interval (-∞,+∞) with weight function w(x) = exp(-x<sup>2</sup>/2)/√2π.
+* GQU: standard Gauss-Legendre quadrature rules, for the unit interval [0,1],with weight function f(x) = 1.
+* KPU: Kronrod-Patterson quadrature rules for the unit interval [0,1], with weight function f(x) = 1.
+* GQN: standard Gauss-Hermite quadrature rules, for the infinite interval (-∞,+∞), with weight function f(x) = exp(-x<sup>2</sup>/2)/√2π.
+* KPN: Kronrod-Patterson quadrature rules for the infinite interval (-∞,+∞) with weight function f(x) = exp(-x<sup>2</sup>/2)/√2π.
 
 # Compiling C Code
 
@@ -39,5 +39,5 @@ type nwspgr
 end
 ```
 
-The maximum dimension supported by the code is 25. 
+The maximum dimension supported by the code is 20. 
 
