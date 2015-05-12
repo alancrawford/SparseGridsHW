@@ -4,7 +4,7 @@
 	I = ∫g(x,y)dF(x,y)
 
 where
-	g(x) = 4 x₁² + 3 x₂³ + x₃⁹ 		
+	g(x) = 4 x₁² - 3 x₂³ + x₃⁹ - 2x₄⁴		
 
 	x ~ N(µ,Σ)
 
