@@ -21,7 +21,7 @@ type nwspgr
 
 	# Constructor function 
 	function nwspgr(rule::ASCIIString, dim::Int64, level::Int64 )
-		ruledict = ["GQU"=>1, "KPU"=>2, "GQN"=>3, "KPN"=>4]	
+		ruledict = Dict("GQU"=>1, "KPU"=>2, "GQN"=>3, "KPN"=>4)
 		K = ccall( (:nwspgr_rule_size_wrapper , "sparselib"),
 					Int,
 					(Int,Int,Int), 
