@@ -31,7 +31,7 @@ where rule is one of {"GQU","KPU","GQN","KPN"} and sgi is an instance of
 
 ```
 type nwspgr
-    rule 	:: ASCIIString
+    rule 	:: String
     dims 	:: Int64
 	level	:: Int64
 	nodes	:: Array{Float64,2}

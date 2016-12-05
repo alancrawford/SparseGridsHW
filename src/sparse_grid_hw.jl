@@ -12,7 +12,7 @@ Created: 21st April 2015
 
  =#
 type nwspgr
-	rule 	 :: ASCIIString
+	rule 	 :: String
 	dims 	 :: Int64
 	level	 :: Int64				
 	NumNodes :: Int64 				
@@ -20,7 +20,7 @@ type nwspgr
 	weights  :: Vector{Float64}
 
 	# Constructor function 
-	function nwspgr(rule::ASCIIString, dim::Int64, level::Int64 )
+	function nwspgr(rule::String, dim::Int64, level::Int64 )
 		ruledict = Dict("GQU"=>1, "KPU"=>2, "GQN"=>3, "KPN"=>4)
 		K = ccall( (:nwspgr_rule_size_wrapper , "sparselib"),
 					Int,
